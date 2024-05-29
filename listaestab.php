@@ -339,9 +339,9 @@ $_SESSION['ACTIVITY'] = time();
 if ($_SESSION['nao_autenticado'] == 0){
   echo "<script>exibirModal('Status da sessão','Voce está logado.')</script>";
 
-  $servername = "localhost";
+  $servername = "localhost:3306";
   $username = "root";
-  $password = "PUC@1234";
+  $password = "2606Bst*";
   $database = "avalia_acesso_db";
 
   $conn = new mysqli($servername, $username, $password, $database);
@@ -408,9 +408,9 @@ if ($_SESSION['nao_autenticado'] == 0){
        
     <div class="col-md-9 col-ms-4 form">
             <?php
-    $servername = "localhost";
+    $servername = "localhost:3306";
     $username = "root";
-    $password = "PUC@1234";
+    $password = "2606Bst*";
     $database = "avalia_acesso_db";
 
 // Crie a conexão
@@ -431,7 +431,6 @@ if ($result->num_rows > 0) {
 
     echo '<table class="table table-responsive table-bordered table-white">';
     echo '<thead>';
-    echo '<th colspan="10" class="table-title">Lista de Avaliações</th>'; // Título da tabela
     echo '<tr>';
     echo '<th>ID</th>';
     echo '<th>Nome</th>';

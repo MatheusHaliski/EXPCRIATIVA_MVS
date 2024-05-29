@@ -227,9 +227,9 @@ $_SESSION['ACTIVITY'] = time();
 if ($_SESSION['nao_autenticado'] == 0){
   echo "<script>exibirModal('Status da Sessão','Voce está logado.')</script>";
 
-  $servername = "localhost";
+  $servername = "localhost: 3306";
   $username = "root";
-  $password = "PUC@1234";
+  $password = "2606Bst*";
   $database = "avalia_acesso_db";
 
   $conn = new mysqli($servername, $username, $password, $database);
@@ -291,9 +291,9 @@ if (!isset($_SESSION['login'])) {
 }
 
 
-$servername = "localhost";
+$servername = "localhost:3306";
 $username = "root";
-$password = "PUC@1234";
+$password = "2606Bst*";
 $database = "avalia_acesso_db";
 
 $conn = new mysqli($servername, $username, $password, $database);

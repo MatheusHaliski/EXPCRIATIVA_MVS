@@ -3,9 +3,9 @@
 session_start();
 
 // Conexão com o banco de dados
-$servername = "localhost";
+$servername = "localhost: 3306";
 $username = "root";
-$password = "PUC@1234";
+$password = "2606Bst*";
 $database = "avalia_acesso_db";
 
 $conn = new mysqli($servername, $username, $password, $database);
