@@ -238,9 +238,9 @@ if ($_SESSION['nao_autenticado'] == 0){
   echo "<script>exibirModal('Status de sessão', 'Você está logado');</script>";
 } 
   // Conexão com o banco de dados
-  $servername = "localhost";
+  $servername = "localhost: 3306";
   $username = "root";
-  $password = "PUC@1234";
+  $password = "2606Bst*";
   $database = "avalia_acesso_db";
 
   $conn = new mysqli($servername, $username, $password, $database);
@@ -368,12 +368,18 @@ if (isset($nome_usuario)) {
                         <label for="confirmPassword">Confirme sua Senha</label>
                         <input id="confirmPassword" type="password" class="form-control" name="confirmPassword" placeholder="Digite sua senha novamente" required>
                     </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Numero da sorte</label>
+                        <input id="texto" type="number" class="form-control" name="luckyNumber" placeholder="Digite seu numero da Sorte" required>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="texto">Cor favorita</label>
-                        <input id="texto" type="text" class="form-control" name="texto" placeholder="Digite sua cor favorita..." required>
+                <div class="form-group">
+                        <label for="confirmPassword">Nome Mãe</label>
+                        <input id="texto" type="text" class="form-control" name="motherName" placeholder="Digite o nome da sua mae" required>
                     </div>
+                    
+                    
                     </div>
                     </div>
                     </div>

@@ -282,9 +282,9 @@ if ($_SESSION['nao_autenticado'] == 0 || $_SESSION['nao_autenticado'] == 1){
   echo "<script>exibirModal('Status da sessão','Voce está logado.')</script>";
 
 
-  $servername = "localhost";
+  $servername = "localhost: 3306";
   $username = "root";
-  $password = "PUC@1234";
+  $password = "2606Bst*";
   $database = "avalia_acesso_db";
 
   $conn = new mysqli($servername, $username, $password, $database);
@@ -318,7 +318,7 @@ if ($_SESSION['nao_autenticado'] == 0 || $_SESSION['nao_autenticado'] == 1){
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#" style="color:#000 ;font-size:large;"> Bem-Vindo ao Avalia Acesso <?php if (isset($_SESSION['login'])){ echo ",".$nome_usuario;} ?>!</a>
+        <a class="navbar-brand" href="#" style="color:#000 ;font-size:large;"> Bem-Vindo ao Avalia Acesso, <?php if (isset($_SESSION['login'])){ echo $nome_usuario;} ?>!</a>
         <img src="mostrarimagem.php" id="logo11" alt="Logo" style="width: 50px;"></img>
         <img src="logo.png" id="logo12" alt="Logo" style="width: 50px;"></img>
       </div>
