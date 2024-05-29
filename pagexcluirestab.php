@@ -236,9 +236,9 @@ if ($_SESSION['nao_autenticado'] == 0){
   echo "<script>exibirModal('Status de sessão', 'Você está logado');</script>";
 } 
   // Conexão com o banco de dados
-  $servername = "localhost";
+  $servername = "localhost: 3306";
   $username = "root";
-  $password = "PUC@1234";
+  $password = "2606Bst*";
   $database = "avalia_acesso_db";
 
   $conn = new mysqli($servername, $username, $password, $database);
@@ -314,7 +314,7 @@ if (isset($nome_usuario)) {
                 <form action='http://localhost/EXPCRIATIVA_MVSB-MAIN/excluirestab.php' enctype="multipart/form-data" method="POST"   id="registration-form" >
                     <div class="form-header">
                         <div class="title">
-                            <h1 class="text-center">Excluir uma Avaliação</h1>
+                            <h1 class="text-center">Excluir Estabelecimento</h1>
                         </div>
                     </div>
 
@@ -322,7 +322,7 @@ if (isset($nome_usuario)) {
                     <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="firstname">ID da Avaliação (Estabelecimento Avaliado)</label>
+                                    <label for="firstname">ID do Estabelecimento</label>
                                     <input id="ID"  type="text" class="form-control" name="ID" placeholder="Digite ID" required>
                                 </div>
                             </div>

@@ -193,9 +193,9 @@ $_SESSION['ACTIVITY'] = time();
 if ($_SESSION['nao_autenticado'] == 0 && $_SESSION['autadm'] == true) {
 
   // Conexão com o banco de dados
-  $servername = "localhost";
+  $servername = "localhost: 3306";
   $username = "root";
-  $password = "PUC@1234";
+  $password = "2606Bst*";
   $database = "avalia_acesso_db";
 
   $conn = new mysqli($servername, $username, $password, $database);
@@ -297,7 +297,7 @@ if ($_SESSION['nao_autenticado'] == 0 && $_SESSION['autadm'] == true) {
             <div class="card">
                 <img src="img/clean.JPG" class="logo1" alt="..." style="width: 70%; height: 60%; position: relative; left: 28px;">
                 <div class="card-body">
-                    <button class="card-button" onclick="window.location.href = 'http://localhost/EXPCRIATIVA_MVSB-MAIN/pagexcluirestab.php'">Limpar Lista de Avaliações (Excluir uma Avaliação)</button>
+                    <button class="card-button" onclick="window.location.href = 'http://localhost/EXPCRIATIVA_MVSB-MAIN/pagexcluirestab.php'">Limpar Lista (Excluir Estabelecimentos)</button>
                 </div>
             </div>
         </div>

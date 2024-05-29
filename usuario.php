@@ -202,9 +202,9 @@ if ($_SESSION['nao_autenticado'] == 0){
       header('Location:http://localhost/EXPCRIATIVA_MVSB-MAIN/usuarioadm.php');
     }
   // Conexão com o banco de dados
-  $servername = "localhost";
+  $servername = "localhost:3306";
   $username = "root";
-  $password = "PUC@1234";
+  $password = "2606Bst*";
   $database = "avalia_acesso_db";
 
   $conn = new mysqli($servername, $username, $password, $database);
